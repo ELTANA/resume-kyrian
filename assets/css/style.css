@@ -1,0 +1,75 @@
+/* ZURI NAVBAR */
+.navbar {
+    background-color: #ffe4b5;
+    height: 10vh;
+}
+
+/* ZURI NAVBAR */
+
+
+/* STICKY PROFILE NAV */
+#profile__nav {
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile__pix {
+    height: 8vh;
+}
+
+
+.fa-linkedin-in,
+.fa-github,
+.fa-link {
+    font-size: 1.5rem;
+}
+
+.fa-phone-alt,
+.fa-envelope,
+.fa-linkedin-in,
+.fa-github,
+.fa-link {
+    color: #E7332B;
+}
+
+.fa-phone-alt:hover,
+.fa-envelope:hover,
+.fa-linkedin-in:hover,
+.fa-github:hover,
+.fa-link:hover {
+    color: #ffe4b5;
+    transition: all 0.5s ease-in;
+}
+
+.links {
+    text-decoration: none;
+    color: #ffe4b5;
+}
+
+.links:hover {
+    color: #E7332B;
+    transition: all 0.5s ease-in;
+}
+
+#statement,
+#expirience,
+#skillset,
+#education,
+#certificates {
+    margin-block: 5rem;
+}
+
+#certificates a {
+    color: #E7332B;
+    text-decoration: none;
+}
+
+#certificates a:hover {
+    color: #182B47;
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+}
