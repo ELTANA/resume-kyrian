@@ -21,7 +21,6 @@
     height: 8vh;
 }
 
-
 .fa-linkedin-in,
 .fa-github,
 .fa-link {
@@ -33,7 +32,8 @@
 .fa-linkedin-in,
 .fa-github,
 .fa-link {
-    color: #E7332B;
+    /* color: #E7332B; */
+    color: rgba(231, 51, 43, 0.7);
 }
 
 .fa-phone-alt:hover,
@@ -72,4 +72,113 @@
     color: #182B47;
     text-decoration: underline;
     transition: all 0.5s ease-in;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px){
+    #profile__nav {
+        height: 30vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile__contacts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #profile__title h1 {
+        font-size: 1.4rem !important;
+    }
+
+    #profile__title h2 {
+        font-size: 1.2rem !important;
+    }
+
+    #profile__contacts p {
+        margin-bottom: 0.5rem !important;
+    }
+
+    #profile__contacts > span {
+        font-size: 1rem !important;
+    }
+
+    .email, 
+    .tel {
+        padding-left: 0.5rem !important;
+    }
+
+    .fa-github,
+    .fa-link,
+    .fa-linkedin-in {
+        font-size: small;
+        margin-inline: 1.5rem !important;
+    }
+    
+    .fa-linkedin-in {
+        margin-inline-start: 0 !important;
+    }
+    
+    .fa-phone-alt,
+    .fa-envelope,
+    .fa-linkedin-in,
+    .fa-github,
+    .fa-link {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 330px){
+    #profile__nav {
+        height: 40vh;
+    }
+
+    .sticky-top {
+        position: relative !important;
+    }
+
+    #statement,
+    #expirience,
+    #skillset,
+    #education,
+    #certificates {
+        margin-block: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 299px){
+    #profile__nav {
+        height: 30vh;
+    }
+
+    .email, 
+    .tel {
+        padding-left: 0.1rem !important;
+    }
+}
+
+@media only screen and (max-width: 292px){
+    .profile_pix-container {
+        display: none;
+        
+    }
+
+    #profile__nav {
+        height: 30vh;
+    }
+
+    .email, 
+    .tel {
+        padding-left: 0 !important;
+    }
 }
